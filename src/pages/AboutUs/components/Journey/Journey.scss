@@ -1,0 +1,43 @@
+@use "@/variables.scss" as *;
+.journey-card {
+  .journey-card-header {
+    background-color: $imm-white;
+    padding: 5px;
+    box-shadow: 1px 10px 35px -15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    .img {
+      width: 7rem;
+      object-fit: fill;
+    }
+    .title {
+      color: $imm-black;
+      font-weight: bold;
+      text-align: start;
+      text-wrap: wrap;
+    }
+    .year {
+      background-color: rgb(242, 245, 255);
+      padding: 5px 15px;
+      color: $primary-color;
+      font-weight: bold;
+    }
+    .active-award {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .journey-card-body {
+    padding: 1.5rem;
+    a {
+      color: #8f479b;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .journey-card-header {
+      .title {
+        font-size: 12px;
+      }
+    }
+  }
+}

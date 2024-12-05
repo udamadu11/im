@@ -1,0 +1,16 @@
+@use "@/variables.scss" as *;
+.awards {
+  background-color: #f2f2f2;
+  .section-heading {
+    text-align: center;
+    font-weight: bold;
+  }
+  .awards-content_bg {
+    backdrop-filter: blur(0.188rem);
+    background-color: rgba(204, 196, 196, 0.19);
+    .award-img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+}

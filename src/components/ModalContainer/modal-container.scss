@@ -1,0 +1,43 @@
+@use '@/variables.scss' as *;
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    bottom: 0;
+    outline: 0;
+    z-index: $zindex-modal;
+
+    /* From https://css.glass */
+    background: rgba(38, 38, 38, 0.6);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(3px);  to improve performance
+    // -webkit-backdrop-filter: blur(3px);
+
+    padding: 1rem;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .modal-dialog {
+        width: 100%;
+
+        margin-top: auto;
+        margin-bottom: auto;
+
+        transition: max-width 0.25s ease-in-out;
+        will-change: max-width;
+
+        .modal-content {
+            .modal-body {
+                overflow-y: inherit;
+            }
+        }
+    }
+    .modal-lg-1000 {
+        max-width: 62.5rem;
+    }
+}

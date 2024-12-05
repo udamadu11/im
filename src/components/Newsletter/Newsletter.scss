@@ -1,0 +1,36 @@
+@use "@/variables.scss" as *;
+
+.newsletter-wrapper {
+  background-color: #f6f6f6;
+  .newsletter {
+    background-color: $primary-color;
+    border-radius: 0.5rem;
+
+    .title {
+      color: #fdfdfd;
+      line-height: 1.6em;
+    }
+
+    .newsletter-inputGroup {
+      background-color: $imm-white;
+      padding: 5px;
+
+      .form-control:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .subscribeBtn {
+      background-color: $primary-color;
+      color: $imm-white;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .newsletter {
+      .title {
+        font-size: 18px;
+      }
+    }
+  }
+}

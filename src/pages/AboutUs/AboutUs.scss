@@ -1,0 +1,85 @@
+@use "@/variables.scss" as *;
+.about-us-page {
+  .journey {
+    margin-top: 3rem;
+    .section-heading {
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+    }
+    .section-heading:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      margin: 10px auto;
+      width: 10%;
+      height: 6px;
+      background: $secondary-color;
+    }
+
+    .section-subheading {
+      color: $primary-color;
+      opacity: 0.8;
+      line-height: 2rem;
+      font-size: 20px;
+    }
+  }
+
+  .paragraph-color {
+    color: $primary-color;
+    opacity: 0.8;
+  }
+  .what-we-offer {
+    background-color: #efe8f3;
+
+    .heading {
+      color: $primary-color;
+    }
+
+    .body-text {
+      line-height: 2em;
+    }
+    .body-hightlightedText {
+      color: $primary-color;
+      font-weight: bold;
+      margin-left: 4px;
+    }
+
+    .list-group-item {
+      background-color: transparent;
+    }
+
+    .img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .team {
+    .section-heading {
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+    }
+    .section-heading:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      margin: 10px auto;
+      width: 10%;
+      height: 6px;
+      background: $secondary-color;
+    }
+
+    .section-subheading {
+      color: $primary-color;
+      opacity: 0.8;
+      line-height: 2rem;
+      font-size: 20px;
+    }
+  }
+}

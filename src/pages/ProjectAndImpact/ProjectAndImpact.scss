@@ -1,0 +1,14 @@
+@use "@/variables.scss" as *;
+.project-impact-page {
+  .banner {
+    background-color: #cbaacf;
+    padding: 3.75rem 0.938rem 1.875rem;
+    h1 {
+      margin-top: 5vh;
+      color: $imm-white;
+      font-size: 4rem;
+      font-weight: bold;
+      position: relative;
+    }
+  }
+}

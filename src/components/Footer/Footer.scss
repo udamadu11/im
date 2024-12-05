@@ -1,0 +1,111 @@
+@use "@/variables.scss" as *;
+.footer {
+  .footer-about {
+    padding-right: 50px;
+
+    p {
+      padding-top: 20px;
+    }
+  }
+
+  .footer-link {
+    overflow: hidden;
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 50%;
+      float: left;
+      overflow: hidden;
+    }
+    ul li {
+      line-height: 35px;
+    }
+    ul li a {
+      color: $imm-black;
+      font-size: 15px;
+      -webkit-transition: all 0.4s linear;
+      transition: all 0.4s linear;
+      text-decoration: none;
+    }
+    ul li a img {
+      margin-right: 8px;
+      color: $primary-color;
+      -webkit-transition: all 0.4s linear;
+      transition: all 0.4s linear;
+    }
+    ul li a:hover {
+      color: $primary-color;
+    }
+    ul li a:hover img {
+      margin-right: 15px;
+    }
+  }
+  .footer-address {
+    ul {
+      list-style: none;
+      padding: 0px;
+
+      a {
+        color: $primary-color;
+        padding-left: 20px;
+      }
+    }
+
+    ul li:last-child {
+      margin-bottom: 0;
+    }
+    .footer-title {
+      h5 {
+        color: $primary-color;
+        font-weight: bold;
+        line-height: 1.6em;
+      }
+    }
+  }
+  .footer-title {
+    h5 {
+      color: $primary-color;
+      font-weight: bold;
+      line-height: 1.6em;
+    }
+  }
+  .footer-copyright {
+    background-color: $primary-color;
+
+    p {
+      padding: 15px;
+      color: $imm-white;
+      margin-bottom: 0px;
+    }
+  }
+  .footer-social {
+    ul {
+      list-style: none;
+      padding: 0px;
+      li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+
+    ul a {
+      display: block;
+      width: 35px;
+      line-height: 35px;
+      font-size: 15px;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      background-color: $primary-color;
+      -webkit-transition: all 0.4s linear;
+      transition: all 0.4s linear;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .footer-about {
+      .logo {
+        text-align: center;
+      }
+    }
+  }
+}

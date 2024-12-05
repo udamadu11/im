@@ -1,0 +1,96 @@
+@use "@/variables.scss" as *;
+.testimonials {
+  .section-heading {
+    color: $imm-black;
+    font-weight: bold;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      margin: 10px auto;
+      width: 10%;
+      height: 6px;
+      background: $secondary-color;
+    }
+  }
+  .section-subheading {
+    color: $imm-black;
+  }
+  .tetimonial-wrapper {
+    width: 60rem;
+    border-radius: 25px;
+    box-shadow: 5px 5px 25px 1px rgb(158, 158, 158);
+
+    margin: auto;
+
+    .slick-slider {
+      .slick-list {
+        .slick-slide {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          width: 100%;
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+          .tetimonial {
+            font-size: 1.125rem;
+            background: #fff;
+            .testimonial-img {
+              background-size: contain;
+              border-radius: 50%;
+              width: 4.688rem;
+              height: 4.688rem;
+              object-fit: cover;
+            }
+            .quote-sign-left,
+            .quote-sign-right {
+              width: 3rem;
+              height: 3rem;
+              object-fit: fill;
+            }
+          }
+        }
+      }
+      .slick-arrow {
+        display: none !important;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .tetimonial-wrapper {
+      width: 100%;
+      .slick-slider {
+        .slick-list {
+          .slick-slide {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            .tetimonial {
+              font-size: 1.125rem;
+              background: #fff;
+              .testimonial-img {
+                background-size: contain;
+                border-radius: 50%;
+                width: 4.688rem;
+                height: 4.688rem;
+                object-fit: cover;
+              }
+              .quote-sign-left,
+              .quote-sign-right {
+                width: 1rem;
+                height: 1rem;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

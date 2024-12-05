@@ -1,0 +1,46 @@
+@use "@/variables.scss" as *;
+.faq {
+  .title {
+    color: #d88284;
+    font-weight: bold;
+    line-height: 1.6em;
+  }
+  .accordion {
+    .accordion-item {
+      margin-bottom: 0;
+      background-color: rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+      margin-top: 0.5rem;
+      .accordion-header {
+        padding: 0.75rem 1.25rem;
+        background-color: rgba(0, 0, 0, 0.03);
+
+        .accordion-button {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: #8f479b;
+          &::after {
+            display: none;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &:not(.collapsed) {
+            box-shadow: none;
+          }
+        }
+      }
+      .accordion-collapse {
+        background-color: $palette-pure-white;
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+        .accordion-body {
+          min-height: 1px;
+          padding: 1.25rem;
+        }
+      }
+    }
+  }
+}

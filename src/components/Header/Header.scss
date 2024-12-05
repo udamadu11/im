@@ -1,0 +1,31 @@
+@use "@/variables.scss" as *;
+
+.header {
+  .navbar-nav {
+    margin-left: auto;
+
+    .nav-link {
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: rgba(0, 0, 0, 0.5);
+      &:hover {
+        color: $palette-main-black;
+      }
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    .roleSwitch {
+      .nav-link {
+        color: $palette-pink;
+        font-weight: bold;
+        font-size: 0.9rem;
+        &:hover {
+          color: $palette-main-black;
+        }
+      }
+    }
+  }
+  &.navbar {
+    padding: 0.5rem 1rem;
+  }
+}

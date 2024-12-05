@@ -1,0 +1,21 @@
+.translate-element {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  display: inline-flex;
+  z-index: 9999;
+  cursor: pointer;
+  padding: 0.25em;
+  background-color: #fff;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,67 @@
+@use "@/variables.scss" as *;
+.privacy-policy {
+  .banner {
+    background-color: #cbaacf;
+    padding: 3.75rem 0.938rem 1.875rem;
+    h3 {
+      margin-top: 5vh;
+      color: $imm-white;
+      font-size: 3em;
+      font-weight: bold;
+      position: relative;
+    }
+  }
+  .accordion {
+    .accordion-item {
+      margin-bottom: 0;
+      background-color: rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+      margin-top: 0.5rem;
+      .accordion-header {
+        padding: 0.75rem 1.25rem;
+        background-color: rgba(0, 0, 0, 0.03);
+
+        .accordion-button {
+          background-color: transparent;
+          border: none;
+          outline: none;
+
+          color: #8f479b;
+          font-weight: 400;
+          font-size: 1em;
+
+          &::after {
+            display: none;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &:not(.collapsed) {
+            box-shadow: none;
+          }
+        }
+      }
+      .accordion-collapse {
+        background-color: $palette-pure-white;
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+        .accordion-body {
+          min-height: 1px;
+          padding: 1.25rem;
+          ol {
+            li {
+              &::marker,
+              h5,
+              h3 {
+                color: #8f479b;
+                font-weight: bold;
+                line-height: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
